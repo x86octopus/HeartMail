@@ -8,8 +8,6 @@
           View Kai's heartbeat, live.
         </button>
       </div>
-    </div>
-    <div class="mx-16">
       <div class="flex justify-between">
         <div class="bg-cover w-56 logo_image border border-teal-500 rounded"></div>
         <div>
@@ -17,8 +15,8 @@
             Powered by NASA
           </button>
         </div>
-    </div>
-</div>
+      </div>
+    </div>    
 </div>
 </template>
 
