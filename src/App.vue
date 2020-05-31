@@ -4,6 +4,7 @@
     <FeatureImages />
     <Summary />
     <FeatureHeartbeat />
+    <TeamFooter />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import FeatureImages from "./views/FeatureImages.vue";
 import Hero from "@/components/Hero.vue";
 import FeatureHeartbeat from "./views/FeatureHeartbeat.vue";
 import Summary from "./views/Summary.vue";
+import TeamFooter from "./views/TeamFooter.vue";
 
 export default {
   name: "App",
@@ -19,7 +21,8 @@ export default {
     Hero,
     FeatureImages,
     FeatureHeartbeat,
-    Summary
+    Summary,
+    TeamFooter,
   }
 };
 </script>
