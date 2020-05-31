@@ -10,7 +10,6 @@ module.exports = {
         "hm-bluegreen": "#3B6064",
       },
     },
-    extend: {},
   },
   variants: {},
   plugins: [],
