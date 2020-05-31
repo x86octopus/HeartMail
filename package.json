@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11"
   },
