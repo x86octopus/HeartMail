@@ -14,18 +14,24 @@
           name="NASA"
           title="Powered by NASA"
           :onClick="changeFeature"
-        >Cutting edge impact</SummaryFeature>
+        >Cutting edge tech</SummaryFeature>
       </div>
 
       <div class="flex-initial text-hm-bluegreen bg-hm-trueblue p-8 m-2 pb-12 rounded-lg">
         <SummaryDescription :active="feature === 'heartbeat'" title="Why heartbeat?">
-          Specific information about the hardware. longer text. CLicking a heading on the left
-          dynamically changes this. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros ipsum, viverra in tortor in, pulvinar scelerisque augue. Maecenas in tincidunt odio. Nulla pulvinar ullamcorper metus et porttitor. Maecenas faucibus tristique neque ac fermentum. Praesent at arcu tempus, maximus dolor vel, aliquam nisl. Morbi posuere et odio vel suscipit. Quisque tellus lorem, luctus id mattis eu, mollis at eros. Duis nec nisi id quam mollis consectetur at ornare mi. Phasellus consectetur dapibus elit. Sed vel cursus nibh. Sed venenatis tellus ut fringilla hendrerit. Nullam pellentesque malesuada nunc, et luctus turpis scelerisque sit amet. Nulla venenatis non ante quis semper. Nullam metus ante, elementum sit amet porta eu, elementum ut tellus.
+          Whether you’re at the ends of the world or the ends of the galaxy, HeartMail wants to bring your home to you. Being away from home doesn’t have to mean being
+          disconnected. The quick reassurance that someone back home is doing can make all the difference. Wearing a HeartMail bracelet allows you to
+          send and receive an instantaneous live heartbeat at the press of a button. So when scheduled chats and quick texts aren’t cutting it,
+          let us help.
         </SummaryDescription>
 
         <SummaryDescription :active="feature === 'NASA'" title="Powered by NASA">
-          Specific information about the NASA tech referenced. longer text. CLicking a heading on the left
-          dynamically changes this. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros ipsum, viverra in tortor in, pulvinar scelerisque augue. Maecenas in tincidunt odio. Nulla pulvinar ullamcorper metus et porttitor. Maecenas faucibus tristique neque ac fermentum. Praesent at arcu tempus, maximus dolor vel, aliquam nisl. Morbi posuere et odio vel suscipit. Quisque tellus lorem, luctus id mattis eu, mollis at eros. Duis nec nisi id quam mollis consectetur at ornare mi. Phasellus consectetur dapibus elit. Sed vel cursus nibh. Sed venenatis tellus ut fringilla hendrerit. Nullam pellentesque malesuada nunc, et luctus turpis scelerisque sit amet. Nulla venenatis non ante quis semper. Nullam metus ante, elementum sit amet porta eu, elementum ut tellus.
+          At NASA, groundbreaking tech called the Sense-It system allows users to apply a small bandage-like device to monitor and record cardiovascular data.
+          Wearing this tech helps keep astronauts safe when transmitted back to doctors and scientists on the ground. At HeartMail, we thought about who else
+          was waiting for the astronauts on the ground – their families and loved ones. Thanks to this technology, something as small and simple as the beat of your
+          heart can be broadcast live, no ground control needed, back to those who need to hear it. With the addition of the HeartMail wearable, this data travels
+          through space and time and can be felt by another user in the form of gentle vibrations. Thanks to the scientists at NASA, and to
+          HeartMail, you can bring your astronaut back to you.
         </SummaryDescription>
       </div>
     </div>
