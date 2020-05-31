@@ -12,9 +12,11 @@
           <div class="flex justify-between">
         <div class="bg-cover w-56 logo_image border border-hm-bluegreen rounded"></div>
         <div>
+          <a href="https://data.nasa.gov/dataset/Wireless-System-for-Continuous-Cardiopulmonary-Mon/a6wc-pscj" target="_blank">
           <button class="bg-transparent hover:bg-hm-bluegreen text-hm-bluegreen font-semibold hover:text-white py-2 px-4 border border-hm-bluegreen hover:border-transparent rounded">
             Powered by NASA
           </button>
+          </a>
         </div>
       </div>
 </div>
