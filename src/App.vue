@@ -2,18 +2,21 @@
   <div id="app">
     <Hero>Hero Box</Hero>
     <FeatureImages />
+    <FeatureHeartbeat />
   </div>
 </template>
 
 <script>
 import FeatureImages from "./views/FeatureImages.vue";
 import Hero from "@/components/Hero.vue";
+import FeatureHeartbeat from "./views/FeatureHeartbeat.vue";
 
 export default {
   name: "App",
   components: {
     Hero,
-    FeatureImages
+    FeatureImages,
+    FeatureHeartbeat,
   }
 };
 </script>
