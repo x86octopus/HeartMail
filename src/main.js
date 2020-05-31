@@ -4,7 +4,7 @@ import "./assets/styles/index.css";
 import { getMinuteHeartData } from "./fitbit.js";
 import moment from "moment";
 
-import { heartData } from "./heartData";
+import { heartData, beatToTimeout } from "./heartData";
 window.heartData = heartData;
 
 Vue.config.productionTip = false;
@@ -15,3 +15,4 @@ new Vue({
 
 window.getHeartData = getMinuteHeartData
 window.moment = moment
+window.beatToTimeout = beatToTimeout

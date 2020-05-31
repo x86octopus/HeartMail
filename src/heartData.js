@@ -7,27 +7,53 @@ const updatePeriodMs = 15*msPerMin
 const longAgo = moment('2000-01-01')
 
 function update() {
-  getMinuteHeartData(moment().subtract(delay), moment()).then((data) => {
-    console.log(data);
-    const beats = heartData.beats;
-    const lastBeat = beats.length ? beats[beats.length - 1]: longAgo;
-    const newBeats = minuteRateToBeats(
-      data.filter((x) => lastBeat <= x.time))
-    heartData.beats = beats.concat(newBeats)
-  });
+  return getMinuteHeartData(moment().subtract(delay, 'ms'), moment())
+    .then((data) => {
+      console.log(data);
+      const lastBeat = beats.length ? beats[beats.length - 1]: longAgo;
+      const newBeats = minuteRateToBeats(
+        data.filter((x) => lastBeat <= x.time))
+      beats = beats.concat(newBeats)
+
+      if(nextTimeout == null && beats.length) {
+        animateAndSchedule()
+      }
+    });
 }
+
+export function beatToTimeout(beat){
+  return beat.valueOf() + delay - moment().valueOf()
+}
+
+function animateAndSchedule(){
+  heartData.animate();
+  var next;
+  if(beats.length){
+    next = beatToTimeout(beats.shift());
+    while(next < 0 && beats.length){
+      next = beatToTimeout(beats.shift())
+    }
+    if(next != null && next >=  0){
+      nextTimeout = setTimeout(animateAndSchedule, next)
+    }
+  }
+}
+
+var nextTimeout;
+var updateInterval;
+var beats = [];
+
 export const heartData = {
-  beats: [],
-  updateInterval: null,
-  getMostRecentBefore() {
-    return 65;
-  },
-  start: function() {
-    update();
-    this.updateInterval = setInterval(update, updatePeriodMs);
+  beats: () => beats.map((x) => moment(x)),//strangely, map(moment) errors
+  animate: null,
+  start: function(animateBeat) {
+    this.animate = animateBeat
+    update()
+    updateInterval = setInterval(update, updatePeriodMs);
   },
   stop: function() {
-    clearInterval(this.updateInterval);
+    clearInterval(updateInterval);
+    clearTimeout(nextTimeout);
   },
 };
 
