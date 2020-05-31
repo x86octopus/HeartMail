@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import "./assets/styles/index.css";
-import { getHeartData } from "./fitbit.js";
+import { getMinuteHeartData } from "./fitbit.js";
 import moment from "moment";
 
 import { heartData } from "./heartData";
@@ -13,5 +13,5 @@ new Vue({
   render: (h) => h(App),
 }).$mount("#app");
 
-window.getHeartData = getHeartData
+window.getHeartData = getMinuteHeartData
 window.moment = moment

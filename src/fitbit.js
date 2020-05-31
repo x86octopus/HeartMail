@@ -49,7 +49,7 @@ function jsonToTimeSeries(start) {
   };
 }
 
-export function getHeartData(start, end) {
+export function getMinuteHeartData(start, end) {
   const startMo = moment.tz(start, "America/Los_Angeles");
   const endMo = moment(end, "America/Los_Angeles");
   return fetch(heartUrl(moment(startMo), moment(endMo)), {
