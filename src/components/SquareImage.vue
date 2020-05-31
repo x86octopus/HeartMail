@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="h-64 rounded" :src="imagePath()" />
+    <img class="h-64 rounded-t" :src="imagePath()" />
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div v-if="active">
-    <div class="font-bold text-2xl">{{title}}</div>
-    <div class="pt-6">
+    <div class="text-hm-bluegreen text-3xl font-semibold">{{title}}</div>
+    <div class="pt-6 leading-relaxed">
       <slot></slot>
     </div>
   </div>

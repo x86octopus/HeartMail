@@ -1,5 +1,5 @@
 <template>
-  <div :class="active ? 'bg-hm-darkblue text-gray-100 rounded' : ''">
+  <div :class="active ? 'bg-hm-trueblue text-hm-bluegreen rounded' : ''">
     <div class="cursor-pointer mt-2 pl-6 py-4" :id="name" @click="onClick">
       <div class="font-bold text-lg">{{title}}</div>
       <div>
