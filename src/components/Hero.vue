@@ -12,7 +12,7 @@
       </div>
     </div>    
           <div class="flex justify-between">
-        <div class="bg-cover w-56 logo_image border border-hm-bluegreen rounded"></div>
+        <a href="https://covid19.spaceappschallenge.org/challenges/covid-challenges/world-away/teams/2fast2curious/project" target="new" class="bg-cover w-56 logo_image border border-hm-bluegreen rounded"></a>
         <div>
           <button class="bg-transparent hover:bg-hm-bluegreen text-hm-bluegreen font-semibold hover:text-white py-2 px-4 border border-hm-bluegreen hover:border-transparent rounded">
             Powered by NASA
