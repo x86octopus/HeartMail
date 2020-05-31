@@ -2,8 +2,8 @@
   <div class="m-16">
     <div class="container mx-auto rounded-t mt-4 mb-1 hero_image">      
       <div class="text-left p-16">
-        <h3 class="font-sans text-white text-3xl mt-10">Stay connected.</h3>
-        <h1 class="font-sans tracking-wide leading-tight hm-darkblue text-6xl mt-20">Even if you're <br />a world away.</h1>
+        <h3 class="font-sans text-white text-3xl mt-10">Stay connected<br />with HeartMail.</h3>
+        <h1 class="font-sans tracking-wide leading-tight hm-darkblue text-6xl mt-8">Even if you're <br />a world away.</h1>
         <button class="mt-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-8 border-b-4 border-teal-700 hover:border-teal-500 rounded">
           View Kai's heartbeat, live.
         </button>
