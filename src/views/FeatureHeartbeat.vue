@@ -1,7 +1,8 @@
 <template>
   <!-- This is an example component -->
 <div>
-    <div class="bg-hm-darkblue p-8">
+    <a id="live">
+      <div class="bg-hm-darkblue p-8">
         <div class="max-w-6xl container mx-auto sm:pt-2">
           <div class="flex flex-items-center mb-4">
               <div class="rectangle bg-hm-lightgreen rounded ml-20">
@@ -25,6 +26,7 @@
         </div>
     </div>
     </div>
+    </a>
     </div>
 
 </template>
