@@ -1,24 +1,26 @@
 <template>
-  <div class="text-weigh">
-    <div>
-      <SquareImage image="space.jpg" />Space
-    </div>
-    <div>
-      <SquareImage />Something
-    </div>
-    <div>
-      <SquareImage />Something Else
+  <div class="mx-16">
+    <div class="flex justify-center">
+      <ImageCard image="milky-way-1023340_640.jpg" title="Share your vitals">
+        Send your heartbeat through space
+      </ImageCard>
+      <ImageCard image="606338main_CNOFS_s.jpg" title="Stay connected">
+        Always know your loved one is okay
+      </ImageCard>
+      <ImageCard image="international-space-station-67774_640.jpg" title="Withstand the distance">
+        Experience greater peace of mind with HeartMail
+      </ImageCard>
     </div>
   </div>
 </template>
 
 <script>
-import SquareImage from "@/components/SquareImage.vue";
+import ImageCard from "@/components/ImageCard.vue";
 
 export default {
   name: "FeatureImages",
   components: {
-    SquareImage
+    ImageCard
   }
 };
 </script>
