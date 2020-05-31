@@ -4,9 +4,11 @@
       <div class="text-left m-10 p-10 absolute bottom-0 left-0 bg-white bg-opacity-25 rounded">
         <h3 class="text-hm-bluegreen text-4xl font-semibold">Stay connected with HeartMail.</h3>
         <h1 class="text-hm-darkblue text-xl pb-5">Even if you're a world away.</h1>
-        <button class="mt-5 bg-hm-blue hover:bg-hm-green text-white font-bold py-2 px-8 border-b-4 border-hm-green hover:border-hm-blue rounded">
-          Live heartbeat >
-        </button>
+        <a href="#live">
+          <button class="mt-5 bg-hm-blue hover:bg-hm-green text-white font-bold py-2 px-8 border-b-4 border-hm-green hover:border-hm-blue rounded">
+            Live heartbeat >
+          </button>
+        </a>
       </div>
     </div>    
           <div class="flex justify-between">
