@@ -1,4 +1,4 @@
-# space-jam
+# HeartMail
 
 ## Project setup
 ```
