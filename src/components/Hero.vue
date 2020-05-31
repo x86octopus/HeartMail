@@ -1,22 +1,22 @@
 <template>
-  <div class="m-16">
-    <div class="container mx-auto rounded-t mt-4 mb-1 hero_image">      
-      <div class="text-left p-16">
-        <h3 class="font-sans text-white text-3xl mt-10">Stay connected<br />with HeartMail.</h3>
-        <h1 class="font-sans tracking-wide leading-tight hm-darkblue text-6xl mt-8">Even if you're <br />a world away.</h1>
-        <button class="mt-5 bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-8 border-b-4 border-teal-700 hover:border-teal-500 rounded">
-          View Kai's heartbeat, live.
+  <div class="mx-auto container m-16">
+    <div class="rounded-t mt-4 mb-1 hero_image relative h-500">      
+      <div class="text-left m-10 p-10 absolute bottom-0 left-0 bg-white bg-opacity-25 rounded">
+        <h3 class="text-hm-bluegreen text-4xl font-semibold">Stay connected with HeartMail.</h3>
+        <h1 class="text-hm-darkblue text-xl pb-5">Even if you're a world away.</h1>
+        <button class="mt-5 bg-hm-blue hover:bg-hm-green text-white font-bold py-2 px-8 border-b-4 border-hm-green hover:border-hm-blue rounded">
+          Live heartbeat >
         </button>
       </div>
-      <div class="flex justify-between">
-        <div class="bg-cover w-56 logo_image border border-teal-500 rounded"></div>
+    </div>    
+          <div class="flex justify-between">
+        <div class="bg-cover w-56 logo_image border border-hm-bluegreen rounded"></div>
         <div>
-          <button class="bg-transparent hover:bg-teal-500 text-teal-700 font-semibold hover:text-white py-2 px-4 border border-teal-500 hover:border-transparent rounded">
+          <button class="bg-transparent hover:bg-hm-bluegreen text-hm-bluegreen font-semibold hover:text-white py-2 px-4 border border-hm-bluegreen hover:border-transparent rounded">
             Powered by NASA
           </button>
         </div>
       </div>
-    </div>    
 </div>
 </template>
 
@@ -38,5 +38,4 @@ export default {
     background-image: url('../assets/images/heartmail-logo.jpg');
     background-repeat: no-repeat;
   }
-
 </style>
