@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-12">
     <a id="live">
       <div class="bg-hm-darkblue p-8">
         <div class="max-w-6xl container mx-auto sm:pt-2">
