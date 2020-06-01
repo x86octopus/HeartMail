@@ -10,11 +10,11 @@
         <h1 class="text-hm-darkblue text-xl pb-5">
           Even if you're a world away.
         </h1>
-        <a href="#live">
+        <a href="#summary">
           <button
             class="mt-5 bg-hm-blue hover:bg-hm-green text-white font-bold py-2 px-8 border-b-4 border-hm-green hover:border-hm-blue rounded"
           >
-            Live heartbeat >
+            Why Heartbeat?
           </button>
         </a>
       </div>

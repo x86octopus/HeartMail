@@ -1,5 +1,6 @@
 <template>
   <div class="bg-transparent text-left mx-20 my-8 px-20">
+    <a id="summary" />
     <div class="flex bg-transparent mx-6">
       <div class="flex-initial text-hm-bluegreen mt-8" style="min-width: 30%">
         <SummaryFeature
