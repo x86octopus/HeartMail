@@ -2,29 +2,25 @@
   <div class="my-12">
     <a id="live">
       <div class="bg-hm-darkblue p-8">
-        <div class="max-w-6xl container mx-auto sm:pt-2">
-          <div class="flex flex-items-center mb-4">
-            <div class="rectangle bg-hm-lightgreen rounded ml-20">
+        <div class="max-w-6xl container lg:mx-auto">
+          <div class="flex items-center flex-wrap mb-4 sm:justify-center">
+            <div class="rectangle bg-hm-lightgreen rounded">
               <div
                 :key="triggerPulse"
                 class="circle bg-hm-bluegreen pulse"
               ></div>
             </div>
-            <div class="w-1/2 text-left px-16">
-              <h1 class="font-bold text-white text-5xl leading-tight mb-4">
+            <div class="text-left md:ml-12">
+              <h1 class="font-bold text-white text-5xl leading-tight my-8">
                 This is a live heartbeat.
               </h1>
 
-              <p class="text-hm-lightgreen text-xl">
-                View your heartbeat by entering your Fitbit user ID below.
-              </p>
+              <p class="text-hm-lightgreen leading-relaxed text-xl">
+                Not a simulation, an animation, or a pattern. <br /><br />
+                This is a living human’s heartbeat, in real time. <br /><br />
+                This could be the heartbeat of the person that you love. 
 
-              <button
-                @click="doPulse()"
-                class="mt-5 bg-hm-blue hover:bg-hm-green text-white font-bold py-2 px-8 border-b-4 border-hm-green hover:border-hm-blue rounded"
-              >
-                See your heartbeat.
-              </button>
+              </p>
             </div>
           </div>
         </div>
