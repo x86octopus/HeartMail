@@ -34,7 +34,7 @@
 </template>
 
 <script>
-// import heartData from "@/heartData.js";
+import { heartData } from "@/heartData.js";
 
 export default {
   name: "FeatureHeartbeat",
@@ -50,6 +50,12 @@ export default {
     },
   },
   components: {},
+  mounted: function() {
+    heartData.start(this.doPulse);
+  },
+  beforeDestroy: function() {
+    heartData.stop();
+  },
 };
 </script>
 
