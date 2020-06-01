@@ -1,17 +1,17 @@
 <template>
-  <!-- This is an example component -->
-<div>
+  <div>
     <a id="live">
       <div class="bg-hm-darkblue p-8">
         <div class="max-w-6xl container mx-auto sm:pt-2">
           <div class="flex flex-items-center mb-4">
-              <div class="rectangle bg-hm-lightgreen rounded ml-20">
-                  <div class="circle transition duration-300 ease-in-out bg-hm-bluegreen hover:bg-hm-green transform hover:-translate-y-1 hover:scale-110"></div>
+            <div class="rectangle bg-hm-lightgreen rounded ml-20">
+              <div
+                :key="triggerPulse"
+                class="circle bg-hm-bluegreen pulse"
+              ></div>
             </div>
             <div class="w-1/2 text-left px-16">
-              <h1
-                class="font-bold text-white text-5xl leading-tight mb-4"
-              >
+              <h1 class="font-bold text-white text-5xl leading-tight mb-4">
                 This is a live heartbeat.
               </h1>
 
@@ -19,31 +19,45 @@
                 View your heartbeat by entering your Fitbit user ID below.
               </p>
 
-              <button class="mt-5 bg-hm-blue hover:bg-hm-green text-white font-bold py-2 px-8 border-b-4 border-hm-green hover:border-hm-blue rounded">
+              <button
+                @click="doPulse()"
+                class="mt-5 bg-hm-blue hover:bg-hm-green text-white font-bold py-2 px-8 border-b-4 border-hm-green hover:border-hm-blue rounded"
+              >
                 See your heartbeat.
-               </button>
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
     </a>
-    </div>
-
+  </div>
 </template>
 
 <script>
+// import heartData from "@/heartData.js";
+
 export default {
   name: "FeatureHeartbeat",
-  components: {
-  }
+  data: function() {
+    return {
+      triggerPulse: false,
+      opening: false,
+    };
+  },
+  methods: {
+    doPulse: function() {
+      this.triggerPulse = !this.triggerPulse;
+    },
+  },
+  components: {},
 };
 </script>
 
 <style scoped>
 .rectangle {
-    width: 300px;
-    height: 300px;
-    position: relative;
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
 
 .rectangle .circle {
@@ -53,5 +67,45 @@ export default {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
 }
 </style>

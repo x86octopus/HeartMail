@@ -13,5 +13,5 @@ new Vue({
   render: (h) => h(App),
 }).$mount("#app");
 
-window.getHeartData = getMinuteHeartData
-window.moment = moment
+window.getHeartData = getMinuteHeartData;
+window.moment = moment;
