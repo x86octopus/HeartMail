@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="h-64 rounded-t" :src="imagePath()" />
+    <img :src="imagePath()" />
   </div>
 </template>
 
@@ -10,16 +10,15 @@ export default {
   props: {
     image: {
       type: String,
-      default: "space.jpg"
-    }
+      default: "space.jpg",
+    },
   },
   methods: {
     imagePath: function() {
       return require("@/assets/images/" + this.image);
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
