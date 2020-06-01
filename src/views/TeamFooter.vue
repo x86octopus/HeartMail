@@ -20,7 +20,7 @@
             </div>
         </div>    
     </div>
-    <div class="m-10 text-left text-hm-bluegreen"><a href="https://suicidepreventionlifeline.org/chat/"> It’s okay to reach out if you’re feeling hopeless.</a></div>
+    <div class="m-10 text-center text-hm-bluegreen underline"><a href="https://suicidepreventionlifeline.org/chat/"> It’s okay to reach out if you’re feeling hopeless.</a></div>
 </div>
 </template>
 
